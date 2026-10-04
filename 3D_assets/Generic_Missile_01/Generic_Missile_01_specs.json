@@ -1,0 +1,61 @@
+{
+  "name": "Generic_Missile_01",
+  "paths": {
+    "blend": "E:\\GitHub repo\\SHIELD_AI\\3D_assets\\Generic_Missile_01\\Generic_Missile_01.blend",
+    "fbx": "E:\\GitHub repo\\SHIELD_AI\\3D_assets\\Generic_Missile_01\\Generic_Missile_01.fbx",
+    "preview": "E:\\GitHub repo\\SHIELD_AI\\3D_assets\\Generic_Missile_01\\Generic_Missile_01_preview.png",
+    "report": "E:\\GitHub repo\\SHIELD_AI\\3D_assets\\Generic_Missile_01\\Generic_Missile_01_specs.json"
+  },
+  "meters": true,
+  "unity_forward": "+Z",
+  "unity_up": "+Y",
+  "parts": [
+    {
+      "name": "Generic_Missile_01_Body_Nose",
+      "triangles": 240,
+      "pivot_blender_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "propeller": false
+    },
+    {
+      "name": "Generic_Missile_01_TailFins",
+      "triangles": 48,
+      "pivot_blender_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "propeller": false
+    },
+    {
+      "name": "Generic_Missile_01_RearNozzle_Exterior",
+      "triangles": 120,
+      "pivot_blender_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "propeller": false
+    },
+    {
+      "name": "Generic_Missile_01_FictionalMarking",
+      "triangles": 12,
+      "pivot_blender_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "propeller": false
+    }
+  ],
+  "dimensions_m": {
+    "width_X": 0.699999988079071,
+    "length_Z_Unity": 2.290000081062317,
+    "height_Y_Unity": 0.699999988079071
+  },
+  "triangles": 420,
+  "fbx_roundtrip": "PASS: hierarchy, dimensions/scale, orientation, materials, propeller pivots"
+}

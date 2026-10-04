@@ -1,0 +1,61 @@
+{
+  "name": "Shahed_Style_Drone_01",
+  "paths": {
+    "blend": "E:\\GitHub repo\\SHIELD_AI\\3D_assets\\Shahed_Style_Drone_01\\Shahed_Style_Drone_01.blend",
+    "fbx": "E:\\GitHub repo\\SHIELD_AI\\3D_assets\\Shahed_Style_Drone_01\\Shahed_Style_Drone_01.fbx",
+    "preview": "E:\\GitHub repo\\SHIELD_AI\\3D_assets\\Shahed_Style_Drone_01\\Shahed_Style_Drone_01_preview.png",
+    "report": "E:\\GitHub repo\\SHIELD_AI\\3D_assets\\Shahed_Style_Drone_01\\Shahed_Style_Drone_01_specs.json"
+  },
+  "meters": true,
+  "unity_forward": "+Z",
+  "unity_up": "+Y",
+  "parts": [
+    {
+      "name": "Shahed_Style_Drone_01_DeltaWing",
+      "triangles": 68,
+      "pivot_blender_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "propeller": false
+    },
+    {
+      "name": "Shahed_Style_Drone_01_CentralBody",
+      "triangles": 96,
+      "pivot_blender_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "propeller": false
+    },
+    {
+      "name": "Shahed_Style_Drone_01_TailFins",
+      "triangles": 24,
+      "pivot_blender_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "propeller": false
+    },
+    {
+      "name": "Shahed_Style_Drone_01_RearPropeller",
+      "triangles": 68,
+      "pivot_blender_m": [
+        0.0,
+        0.7649999856948853,
+        0.03999999910593033
+      ],
+      "propeller": true
+    }
+  ],
+  "dimensions_m": {
+    "width_X": 2.4000000953674316,
+    "length_Z_Unity": 1.800000011920929,
+    "height_Y_Unity": 0.3450000137090683
+  },
+  "triangles": 256,
+  "fbx_roundtrip": "PASS: hierarchy, dimensions/scale, orientation, materials, propeller pivots"
+}

@@ -1,0 +1,101 @@
+{
+  "name": "FPV_Quadcopter_01",
+  "paths": {
+    "blend": "E:\\GitHub repo\\SHIELD_AI\\3D_assets\\FPV_Quadcopter_01\\FPV_Quadcopter_01.blend",
+    "fbx": "E:\\GitHub repo\\SHIELD_AI\\3D_assets\\FPV_Quadcopter_01\\FPV_Quadcopter_01.fbx",
+    "preview": "E:\\GitHub repo\\SHIELD_AI\\3D_assets\\FPV_Quadcopter_01\\FPV_Quadcopter_01_preview.png",
+    "report": "E:\\GitHub repo\\SHIELD_AI\\3D_assets\\FPV_Quadcopter_01\\FPV_Quadcopter_01_specs.json"
+  },
+  "meters": true,
+  "unity_forward": "+Z",
+  "unity_up": "+Y",
+  "parts": [
+    {
+      "name": "FPV_Quadcopter_01_Frame_Motors",
+      "triangles": 504,
+      "pivot_blender_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "propeller": false
+    },
+    {
+      "name": "FPV_Quadcopter_01_Battery",
+      "triangles": 48,
+      "pivot_blender_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "propeller": false
+    },
+    {
+      "name": "FPV_Quadcopter_01_FrontCamera",
+      "triangles": 100,
+      "pivot_blender_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "propeller": false
+    },
+    {
+      "name": "FPV_Quadcopter_01_Propeller_FL",
+      "triangles": 68,
+      "pivot_blender_m": [
+        -0.1899999976158142,
+        -0.1599999964237213,
+        0.1550000011920929
+      ],
+      "propeller": true
+    },
+    {
+      "name": "FPV_Quadcopter_01_Propeller_FR",
+      "triangles": 68,
+      "pivot_blender_m": [
+        0.1899999976158142,
+        -0.1599999964237213,
+        0.1550000011920929
+      ],
+      "propeller": true
+    },
+    {
+      "name": "FPV_Quadcopter_01_Propeller_RL",
+      "triangles": 68,
+      "pivot_blender_m": [
+        -0.1899999976158142,
+        0.1599999964237213,
+        0.1550000011920929
+      ],
+      "propeller": true
+    },
+    {
+      "name": "FPV_Quadcopter_01_Propeller_RR",
+      "triangles": 68,
+      "pivot_blender_m": [
+        0.1899999976158142,
+        0.1599999964237213,
+        0.1550000011920929
+      ],
+      "propeller": true
+    },
+    {
+      "name": "FPV_Quadcopter_01_Antenna_Visual",
+      "triangles": 48,
+      "pivot_blender_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "propeller": false
+    }
+  ],
+  "dimensions_m": {
+    "width_X": 0.6340000033378601,
+    "length_Z_Unity": 0.37199997901916504,
+    "height_Y_Unity": 0.28999999165534973
+  },
+  "triangles": 972,
+  "fbx_roundtrip": "PASS: hierarchy, dimensions/scale, orientation, materials, propeller pivots"
+}
