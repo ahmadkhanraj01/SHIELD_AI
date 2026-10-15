@@ -1,0 +1,39 @@
+{
+  "name": "Mountain_01",
+  "files": {
+    "blend": "Mountain_01.blend",
+    "fbx": "Mountain_01.fbx",
+    "preview": "Mountain_01_preview.png"
+  },
+  "meters": true,
+  "blender_version": "3.0.1",
+  "front": "Blender -Y",
+  "fbx_export_axes": {
+    "forward": "+Z",
+    "up": "+Y"
+  },
+  "dimensions_m": {
+    "width_X": 520.0,
+    "length_Y": 340.0,
+    "height_Z": 148.029
+  },
+  "triangles": 4800,
+  "parts": [
+    {
+      "name": "Mountain_01_Grass",
+      "triangles": 2767,
+      "moving": false
+    },
+    {
+      "name": "Mountain_01_Rock",
+      "triangles": 1801,
+      "moving": false
+    },
+    {
+      "name": "Mountain_01_Snow",
+      "triangles": 232,
+      "moving": false
+    }
+  ],
+  "unity_check": "not yet performed"
+}
