@@ -1,0 +1,49 @@
+{
+  "name": "Building_Small_02_Damaged",
+  "files": {
+    "blend": "Building_Small_02_Damaged.blend",
+    "fbx": "Building_Small_02_Damaged.fbx",
+    "preview": "Building_Small_02_Damaged_preview.png"
+  },
+  "meters": true,
+  "blender_version": "3.0.1",
+  "front": "Blender -Y",
+  "fbx_export_axes": {
+    "forward": "+Z",
+    "up": "+Y"
+  },
+  "dimensions_m": {
+    "width_X": 8.987,
+    "length_Y": 10.335,
+    "height_Z": 10.946
+  },
+  "triangles": 1788,
+  "parts": [
+    {
+      "name": "Building_Small_02_Damaged_Structure",
+      "triangles": 240,
+      "moving": false
+    },
+    {
+      "name": "Building_Small_02_Damaged_Trim",
+      "triangles": 828,
+      "moving": false
+    },
+    {
+      "name": "Building_Small_02_Damaged_Windows",
+      "triangles": 348,
+      "moving": false
+    },
+    {
+      "name": "Building_Small_02_Damaged_Accent",
+      "triangles": 132,
+      "moving": false
+    },
+    {
+      "name": "Building_Small_02_Damaged_Scorched",
+      "triangles": 240,
+      "moving": false
+    }
+  ],
+  "unity_check": "not yet performed"
+}

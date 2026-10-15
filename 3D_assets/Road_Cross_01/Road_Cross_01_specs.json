@@ -1,0 +1,44 @@
+{
+  "name": "Road_Cross_01",
+  "files": {
+    "blend": "Road_Cross_01.blend",
+    "fbx": "Road_Cross_01.fbx",
+    "preview": "Road_Cross_01_preview.png"
+  },
+  "meters": true,
+  "blender_version": "3.0.1",
+  "front": "Blender -Y",
+  "fbx_export_axes": {
+    "forward": "+Z",
+    "up": "+Y"
+  },
+  "dimensions_m": {
+    "width_X": 20.0,
+    "length_Y": 20.0,
+    "height_Z": 0.37
+  },
+  "triangles": 684,
+  "parts": [
+    {
+      "name": "Road_Cross_01_Asphalt",
+      "triangles": 12,
+      "moving": false
+    },
+    {
+      "name": "Road_Cross_01_Marking",
+      "triangles": 528,
+      "moving": false
+    },
+    {
+      "name": "Road_Cross_01_Structure",
+      "triangles": 48,
+      "moving": false
+    },
+    {
+      "name": "Road_Cross_01_Trim",
+      "triangles": 96,
+      "moving": false
+    }
+  ],
+  "unity_check": "not yet performed"
+}

@@ -1,0 +1,49 @@
+{
+  "name": "Radar_Panel_01",
+  "files": {
+    "blend": "Radar_Panel_01.blend",
+    "fbx": "Radar_Panel_01.fbx",
+    "preview": "Radar_Panel_01_preview.png"
+  },
+  "meters": true,
+  "blender_version": "3.0.1",
+  "front": "Blender -Y",
+  "fbx_export_axes": {
+    "forward": "+Z",
+    "up": "+Y"
+  },
+  "dimensions_m": {
+    "width_X": 2.65,
+    "length_Y": 5.35,
+    "height_Z": 6.348
+  },
+  "triangles": 564,
+  "parts": [
+    {
+      "name": "Radar_Panel_01_Structure",
+      "triangles": 96,
+      "moving": false
+    },
+    {
+      "name": "Radar_Panel_01_Trim",
+      "triangles": 248,
+      "moving": false
+    },
+    {
+      "name": "Radar_Panel_01_Head",
+      "triangles": 220,
+      "moving": true,
+      "pivot_blender_m": [
+        0.0,
+        0.3,
+        4.05
+      ],
+      "rest_rotation_deg": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "unity_check": "not yet performed"
+}

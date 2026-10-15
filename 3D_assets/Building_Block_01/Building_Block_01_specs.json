@@ -1,0 +1,54 @@
+{
+  "name": "Building_Block_01",
+  "files": {
+    "blend": "Building_Block_01.blend",
+    "fbx": "Building_Block_01.fbx",
+    "preview": "Building_Block_01_preview.png"
+  },
+  "meters": true,
+  "blender_version": "3.0.1",
+  "front": "Blender -Y",
+  "fbx_export_axes": {
+    "forward": "+Z",
+    "up": "+Y"
+  },
+  "dimensions_m": {
+    "width_X": 16.4,
+    "length_Y": 8.4,
+    "height_Z": 13.6
+  },
+  "triangles": 72,
+  "parts": [
+    {
+      "name": "Body",
+      "triangles": 12,
+      "moving": false
+    },
+    {
+      "name": "Door",
+      "triangles": 12,
+      "moving": false
+    },
+    {
+      "name": "Roof",
+      "triangles": 12,
+      "moving": false
+    },
+    {
+      "name": "Vent",
+      "triangles": 12,
+      "moving": false
+    },
+    {
+      "name": "Windows_0",
+      "triangles": 12,
+      "moving": false
+    },
+    {
+      "name": "Windows_1",
+      "triangles": 12,
+      "moving": false
+    }
+  ],
+  "unity_check": "not yet performed"
+}

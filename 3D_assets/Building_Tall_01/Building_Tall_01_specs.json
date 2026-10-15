@@ -1,0 +1,69 @@
+{
+  "name": "Building_Tall_01",
+  "files": {
+    "blend": "Building_Tall_01.blend",
+    "fbx": "Building_Tall_01.fbx",
+    "preview": "Building_Tall_01_preview.png"
+  },
+  "meters": true,
+  "blender_version": "3.0.1",
+  "front": "Blender -Y",
+  "fbx_export_axes": {
+    "forward": "+Z",
+    "up": "+Y"
+  },
+  "dimensions_m": {
+    "width_X": 8.0,
+    "length_Y": 8.05,
+    "height_Z": 28.4
+  },
+  "triangles": 108,
+  "parts": [
+    {
+      "name": "Antenna",
+      "triangles": 12,
+      "moving": false
+    },
+    {
+      "name": "Base",
+      "triangles": 12,
+      "moving": false
+    },
+    {
+      "name": "Door",
+      "triangles": 12,
+      "moving": false
+    },
+    {
+      "name": "Roof",
+      "triangles": 12,
+      "moving": false
+    },
+    {
+      "name": "Tower",
+      "triangles": 12,
+      "moving": false
+    },
+    {
+      "name": "Windows_0",
+      "triangles": 12,
+      "moving": false
+    },
+    {
+      "name": "Windows_1",
+      "triangles": 12,
+      "moving": false
+    },
+    {
+      "name": "Windows_2",
+      "triangles": 12,
+      "moving": false
+    },
+    {
+      "name": "Windows_3",
+      "triangles": 12,
+      "moving": false
+    }
+  ],
+  "unity_check": "not yet performed"
+}

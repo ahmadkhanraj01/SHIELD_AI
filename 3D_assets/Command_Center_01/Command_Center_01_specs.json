@@ -1,0 +1,44 @@
+{
+  "name": "Command_Center_01",
+  "files": {
+    "blend": "Command_Center_01.blend",
+    "fbx": "Command_Center_01.fbx",
+    "preview": "Command_Center_01_preview.png"
+  },
+  "meters": true,
+  "blender_version": "3.0.1",
+  "front": "Blender -Y",
+  "fbx_export_axes": {
+    "forward": "+Z",
+    "up": "+Y"
+  },
+  "dimensions_m": {
+    "width_X": 28.12,
+    "length_Y": 23.81,
+    "height_Z": 19.88
+  },
+  "triangles": 1472,
+  "parts": [
+    {
+      "name": "Command_Center_01_Structure",
+      "triangles": 140,
+      "moving": false
+    },
+    {
+      "name": "Command_Center_01_Trim",
+      "triangles": 1108,
+      "moving": false
+    },
+    {
+      "name": "Command_Center_01_Windows",
+      "triangles": 180,
+      "moving": false
+    },
+    {
+      "name": "Command_Center_01_Accent",
+      "triangles": 44,
+      "moving": false
+    }
+  ],
+  "unity_check": "not yet performed"
+}

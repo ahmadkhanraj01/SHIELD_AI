@@ -1,0 +1,49 @@
+{
+  "name": "Car_02",
+  "files": {
+    "blend": "Car_02.blend",
+    "fbx": "Car_02.fbx",
+    "preview": "Car_02_preview.png"
+  },
+  "meters": true,
+  "blender_version": "3.0.1",
+  "front": "Blender -Y",
+  "fbx_export_axes": {
+    "forward": "+Z",
+    "up": "+Y"
+  },
+  "dimensions_m": {
+    "width_X": 1.98,
+    "length_Y": 4.38,
+    "height_Z": 1.571
+  },
+  "triangles": 340,
+  "parts": [
+    {
+      "name": "Car_02_Accent",
+      "triangles": 24,
+      "moving": false
+    },
+    {
+      "name": "Car_02_Marking",
+      "triangles": 24,
+      "moving": false
+    },
+    {
+      "name": "Car_02_Structure",
+      "triangles": 48,
+      "moving": false
+    },
+    {
+      "name": "Car_02_Trim",
+      "triangles": 232,
+      "moving": false
+    },
+    {
+      "name": "Car_02_Windows",
+      "triangles": 12,
+      "moving": false
+    }
+  ],
+  "unity_check": "not yet performed"
+}

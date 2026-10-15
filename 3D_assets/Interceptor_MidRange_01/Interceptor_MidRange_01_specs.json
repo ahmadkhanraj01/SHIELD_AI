@@ -1,0 +1,39 @@
+{
+  "name": "Interceptor_MidRange_01",
+  "files": {
+    "blend": "Interceptor_MidRange_01.blend",
+    "fbx": "Interceptor_MidRange_01.fbx",
+    "preview": "Interceptor_MidRange_01_preview.png"
+  },
+  "meters": true,
+  "blender_version": "3.0.1",
+  "front": "Blender -Y",
+  "fbx_export_axes": {
+    "forward": "+Z",
+    "up": "+Y"
+  },
+  "dimensions_m": {
+    "width_X": 0.884,
+    "length_Y": 4.6,
+    "height_Z": 0.884
+  },
+  "triangles": 516,
+  "parts": [
+    {
+      "name": "Interceptor_MidRange_01_Structure",
+      "triangles": 168,
+      "moving": false
+    },
+    {
+      "name": "Interceptor_MidRange_01_Trim",
+      "triangles": 180,
+      "moving": false
+    },
+    {
+      "name": "Interceptor_MidRange_01_Accent",
+      "triangles": 168,
+      "moving": false
+    }
+  ],
+  "unity_check": "not yet performed"
+}

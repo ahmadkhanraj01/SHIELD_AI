@@ -1,0 +1,34 @@
+{
+  "name": "Tree_01",
+  "files": {
+    "blend": "Tree_01.blend",
+    "fbx": "Tree_01.fbx",
+    "preview": "Tree_01_preview.png"
+  },
+  "meters": true,
+  "blender_version": "3.0.1",
+  "front": "Blender -Y",
+  "fbx_export_axes": {
+    "forward": "+Z",
+    "up": "+Y"
+  },
+  "dimensions_m": {
+    "width_X": 3.557,
+    "length_Y": 2.782,
+    "height_Z": 5.04
+  },
+  "triangles": 88,
+  "parts": [
+    {
+      "name": "Tree_01_Bark",
+      "triangles": 28,
+      "moving": false
+    },
+    {
+      "name": "Tree_01_Foliage",
+      "triangles": 60,
+      "moving": false
+    }
+  ],
+  "unity_check": "not yet performed"
+}

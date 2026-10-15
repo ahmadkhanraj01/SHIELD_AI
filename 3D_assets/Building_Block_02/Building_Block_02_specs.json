@@ -1,0 +1,44 @@
+{
+  "name": "Building_Block_02",
+  "files": {
+    "blend": "Building_Block_02.blend",
+    "fbx": "Building_Block_02.fbx",
+    "preview": "Building_Block_02_preview.png"
+  },
+  "meters": true,
+  "blender_version": "3.0.1",
+  "front": "Blender -Y",
+  "fbx_export_axes": {
+    "forward": "+Z",
+    "up": "+Y"
+  },
+  "dimensions_m": {
+    "width_X": 18.6,
+    "length_Y": 11.45,
+    "height_Z": 16.2
+  },
+  "triangles": 2124,
+  "parts": [
+    {
+      "name": "Building_Block_02_Accent",
+      "triangles": 72,
+      "moving": false
+    },
+    {
+      "name": "Building_Block_02_Structure",
+      "triangles": 36,
+      "moving": false
+    },
+    {
+      "name": "Building_Block_02_Trim",
+      "triangles": 1224,
+      "moving": false
+    },
+    {
+      "name": "Building_Block_02_Windows",
+      "triangles": 792,
+      "moving": false
+    }
+  ],
+  "unity_check": "not yet performed"
+}

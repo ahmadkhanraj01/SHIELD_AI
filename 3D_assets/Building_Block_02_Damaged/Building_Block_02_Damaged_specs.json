@@ -1,0 +1,49 @@
+{
+  "name": "Building_Block_02_Damaged",
+  "files": {
+    "blend": "Building_Block_02_Damaged.blend",
+    "fbx": "Building_Block_02_Damaged.fbx",
+    "preview": "Building_Block_02_Damaged_preview.png"
+  },
+  "meters": true,
+  "blender_version": "3.0.1",
+  "front": "Blender -Y",
+  "fbx_export_axes": {
+    "forward": "+Z",
+    "up": "+Y"
+  },
+  "dimensions_m": {
+    "width_X": 20.626,
+    "length_Y": 13.852,
+    "height_Z": 16.596
+  },
+  "triangles": 2844,
+  "parts": [
+    {
+      "name": "Building_Block_02_Damaged_Structure",
+      "triangles": 288,
+      "moving": false
+    },
+    {
+      "name": "Building_Block_02_Damaged_Trim",
+      "triangles": 1500,
+      "moving": false
+    },
+    {
+      "name": "Building_Block_02_Damaged_Windows",
+      "triangles": 780,
+      "moving": false
+    },
+    {
+      "name": "Building_Block_02_Damaged_Accent",
+      "triangles": 72,
+      "moving": false
+    },
+    {
+      "name": "Building_Block_02_Damaged_Scorched",
+      "triangles": 204,
+      "moving": false
+    }
+  ],
+  "unity_check": "not yet performed"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Building_Background_03",
+  "files": {
+    "blend": "Building_Background_03.blend",
+    "fbx": "Building_Background_03.fbx",
+    "preview": "Building_Background_03_preview.png"
+  },
+  "meters": true,
+  "blender_version": "3.0.1",
+  "front": "Blender -Y",
+  "fbx_export_axes": {
+    "forward": "+Z",
+    "up": "+Y"
+  },
+  "dimensions_m": {
+    "width_X": 9.3,
+    "length_Y": 9.3,
+    "height_Z": 40.3
+  },
+  "triangles": 180,
+  "parts": [
+    {
+      "name": "Building_Background_03_Structure",
+      "triangles": 12,
+      "moving": false
+    },
+    {
+      "name": "Building_Background_03_Trim",
+      "triangles": 24,
+      "moving": false
+    },
+    {
+      "name": "Building_Background_03_Windows",
+      "triangles": 144,
+      "moving": false
+    }
+  ],
+  "unity_check": "not yet performed"
+}
