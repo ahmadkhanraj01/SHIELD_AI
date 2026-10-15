@@ -5,7 +5,7 @@
 
 **An educational 3D simulation project combining Unity visualization, Blender assets, and a planned Python analysis backend.**
 
-SHIELD_AI explores an abstract layered defense scenario using fictional or stylized objects. The project is currently in the **asset preparation stage**. The repository contains four 3D assets, previews, a project roadmap, and a Windows Blender MCP setup guide.
+SHIELD_AI explores an abstract layered defense scenario using fictional or stylized objects. The project is currently in the **asset preparation stage**. The repository contains four scenario 3D assets, a city environment kit of 17 buildings, road tiles, and props, previews, a project roadmap, and a Windows Blender MCP setup guide.
 
 The models are nonfunctional exterior visuals. The project does not claim to reproduce or validate the performance of real defense systems.
 
@@ -17,14 +17,19 @@ The models are nonfunctional exterior visuals. The project does not claim to rep
 | FPV quadcopter asset | Created |
 | Stylized delta-wing drone asset | Created |
 | Generic missile exterior asset | Created |
+| City buildings (3 detailed, 3 blockouts) and ground tile | Created; Unity check pending |
+| Road tile kit (straight, crossroads, T-junction, corner) | Created; Unity check pending |
+| Street props (streetlight, 2 trees, bench, 2 cars) | Created; Unity check pending |
 | Local Blender MCP connection | Configured and tested in the author's local host |
 | Unity integration | Planned |
 | Python simulation and analysis | Planned |
 | Machine learning experiments | Planned |
 
-Asset creation reports describe successful FBX re-import checks. Unity integration still needs to be checked in the actual Unity project.
+Asset creation reports describe successful FBX re-import checks for the four scenario assets. The city environment kit has not been re-imported or checked yet. Unity integration still needs to be checked in the actual Unity project.
 
 ## 3D assets
+
+### Scenario assets
 
 | Asset | Triangles | Description |
 |---|---:|---|
@@ -33,6 +38,15 @@ Asset creation reports describe successful FBX re-import checks. Unity integrati
 | Shahed_Style_Drone_01 | 256 | Stylized delta-wing drone with rear propeller |
 | Generic_Missile_01 | 420 | Fictional exterior model |
 | **Total** | **3,504** | Four reusable assets |
+
+### City environment kit
+
+| Group | Assets | Triangles |
+|---|---|---:|
+| Buildings and ground | Building_Small_02, Building_Tall_02, Building_Block_02, three `_01` blockouts, Ground_Tile_01 | 7,112 |
+| Road tiles | Road_Straight_01, Road_Cross_01, Road_T_01, Road_Corner_01 (20 m grid) | 1,860 |
+| Street props | Streetlight_01, Tree_01, Tree_02, Bench_01, Car_01, Car_02 | 1,102 |
+| **Total** | **17 assets** | **10,074** |
 
 See the [illustrated asset catalog](3D_assets/README.md) for previews, model downloads, dimensions, specifications, and import notes.
 
@@ -65,7 +79,7 @@ The roadmap describes intended work; its presence does not imply those features 
 5. Check the radar mount or propeller pivots before adding animation.
 6. Create a Unity prefab after the import looks correct.
 
-The reported export convention is **Unity +Z forward / +Y up**. Assets use simple gray and blue materials. Rendering-pipeline differences may require material adjustments in Unity.
+The reported export convention is **Unity +Z forward / +Y up**. Assets use simple gray and blue materials; the city kit adds asphalt, road-marking white, foliage, and bark. Rendering-pipeline differences may require material adjustments in Unity.
 
 ## Planned software structure
 
@@ -82,11 +96,10 @@ This diagram is a proposed separation of responsibilities, not a description of 
 
 ## Next milestones
 
-- Import and check all four assets in Unity.
-- Create reusable prefabs and a simple test scene.
+- Import and check the scenario assets and the city environment kit in Unity.
+- Create reusable prefabs and assemble a test city block from the road tiles, buildings, and props.
 - Demonstrate Python-to-Unity communication with a moving cube.
 - Add logging, pause/restart controls, and reproducible replay.
-- Expand the environment with reusable buildings and ground assets.
 
 ## Author
 

@@ -1,8 +1,16 @@
 # SHIELD_AI — 3D Asset Catalog
 
-Four low-poly assets for the project's educational Unity simulation. Each asset has an editable Blender source, an FBX export, and a PNG preview.
+Low-poly assets for the project's educational Unity simulation: four scenario assets plus a city environment kit of buildings, road tiles, and street props. Each asset has an editable Blender source, an FBX export, and a PNG preview.
 
-The visual style uses simple gray materials with blue accents. All models are exterior visuals without flight behavior. Three assets also have specification JSON files.
+The visual style uses simple gray materials with blue accents. All models are exterior visuals without flight behavior. Three scenario assets also have specification JSON files.
+
+| Group | Assets | Triangles |
+|---|---:|---:|
+| [Scenario assets](#inventory) | 4 | 3,504 |
+| [Buildings and ground](#buildings-and-ground) | 7 | 7,112 |
+| [Road tiles](#road-tiles) | 4 | 1,860 |
+| [Street props](#street-props) | 6 | 1,102 |
+| **Total** | **21** | **13,578** |
 
 ## Inventory
 
@@ -62,6 +70,54 @@ Fictional cylindrical exterior with a pointed nose, tail fins, and a rear nozzle
 - [Specifications JSON](Generic_Missile_01/Generic_Missile_01_specs.json)
 
 Movement and visual trails are separate Unity features; they are not included in this model.
+
+## City environment kit
+
+Buildings, road tiles, and props for the defended city scene. Dimensions and triangle counts below were measured from the generated meshes in Blender. Unlike the scenario assets, these FBXs have **not yet been re-imported or checked in Unity**.
+
+### Buildings and ground
+
+The `_02` buildings are detailed revisions of the `_01` blockouts. Prefer `_02` for the scene; keep `_01` as lightweight stand-ins for distant or repeated buildings.
+
+| Preview | Asset | Dimensions (m) | Triangles | Description | Files |
+|---|---|---|---:|---|---|
+| <img src="Building_Small_02/Building_Small_02_preview.png" alt="Building_Small_02 preview" width="180"> | Building_Small_02 | 7.60 × 7.70 × 11.70 | 1,176 | Three-storey residential building with window sills, floor ledges, front balconies, entrance canopy, rooftop water tank and AC units | [Blend](Building_Small_02/Building_Small_02.blend) · [FBX](Building_Small_02/Building_Small_02.fbx) · [PNG](Building_Small_02/Building_Small_02_preview.png) |
+| <img src="Building_Tall_02/Building_Tall_02_preview.png" alt="Building_Tall_02 preview" width="180"> | Building_Tall_02 | 11.60 × 13.50 × 39.85 | 3,536 | Office tower with a glass-fronted podium, entrance canopy, eight window floors, blue corner fins, glazed crown, and antenna | [Blend](Building_Tall_02/Building_Tall_02.blend) · [FBX](Building_Tall_02/Building_Tall_02.fbx) · [PNG](Building_Tall_02/Building_Tall_02_preview.png) |
+| <img src="Building_Block_02/Building_Block_02_preview.png" alt="Building_Block_02 preview" width="180"> | Building_Block_02 | 18.60 × 11.45 × 16.20 | 2,124 | Wide four-storey block with ground-floor shopfronts and blue awnings, pilasters, rooftop stair housing, AC units, and vents | [Blend](Building_Block_02/Building_Block_02.blend) · [FBX](Building_Block_02/Building_Block_02.fbx) · [PNG](Building_Block_02/Building_Block_02_preview.png) |
+| <img src="Building_Small_01/Building_Small_01_preview.png" alt="Building_Small_01 preview" width="180"> | Building_Small_01 | 6.40 × 6.40 × 8.40 | 60 | Simple blockout: body, roof slab, window bands, door | [Blend](Building_Small_01/Building_Small_01.blend) · [FBX](Building_Small_01/Building_Small_01.fbx) · [PNG](Building_Small_01/Building_Small_01_preview.png) |
+| <img src="Building_Tall_01/Building_Tall_01_preview.png" alt="Building_Tall_01 preview" width="180"> | Building_Tall_01 | 8.00 × 8.05 × 28.40 | 108 | Simple blockout: base, tower, window bands, antenna | [Blend](Building_Tall_01/Building_Tall_01.blend) · [FBX](Building_Tall_01/Building_Tall_01.fbx) · [PNG](Building_Tall_01/Building_Tall_01_preview.png) |
+| <img src="Building_Block_01/Building_Block_01_preview.png" alt="Building_Block_01 preview" width="180"> | Building_Block_01 | 16.40 × 8.40 × 13.60 | 72 | Simple blockout: wide body, roof slab, window bands, vent | [Blend](Building_Block_01/Building_Block_01.blend) · [FBX](Building_Block_01/Building_Block_01.fbx) · [PNG](Building_Block_01/Building_Block_01_preview.png) |
+| <img src="Ground_Tile_01/Ground_Tile_01_preview.png" alt="Ground_Tile_01 preview" width="180"> | Ground_Tile_01 | 20.00 × 20.00 × 0.23 | 36 | Flat 20 m slab with a plain road strip; superseded by the road tiles below | [Blend](Ground_Tile_01/Ground_Tile_01.blend) · [FBX](Ground_Tile_01/Ground_Tile_01.fbx) · [PNG](Ground_Tile_01/Ground_Tile_01_preview.png) |
+
+### Road tiles
+
+Every tile is **20 × 20 m** with its origin at the tile centre and the road surface at height 0. Each has a 10 m two-lane road and 5 m raised sidewalks with curbs. Place tiles on a 20 m grid and rotate them in 90° steps; lane dashes repeat every 4 m, so markings continue across tile edges.
+
+| Preview | Asset | Dimensions (m) | Triangles | Description | Files |
+|---|---|---|---:|---|---|
+| <img src="Road_Straight_01/Road_Straight_01_preview.png" alt="Road_Straight_01 preview" width="180"> | Road_Straight_01 | 20.00 × 20.00 × 0.37 | 288 | Straight road with dashed centre line and edge lines | [Blend](Road_Straight_01/Road_Straight_01.blend) · [FBX](Road_Straight_01/Road_Straight_01.fbx) · [PNG](Road_Straight_01/Road_Straight_01_preview.png) |
+| <img src="Road_Cross_01/Road_Cross_01_preview.png" alt="Road_Cross_01 preview" width="180"> | Road_Cross_01 | 20.00 × 20.00 × 0.37 | 684 | Four-way crossroads with crosswalks on every arm | [Blend](Road_Cross_01/Road_Cross_01.blend) · [FBX](Road_Cross_01/Road_Cross_01.fbx) · [PNG](Road_Cross_01/Road_Cross_01_preview.png) |
+| <img src="Road_T_01/Road_T_01_preview.png" alt="Road_T_01 preview" width="180"> | Road_T_01 | 20.00 × 20.00 × 0.37 | 588 | T-junction with crosswalks | [Blend](Road_T_01/Road_T_01.blend) · [FBX](Road_T_01/Road_T_01.fbx) · [PNG](Road_T_01/Road_T_01_preview.png) |
+| <img src="Road_Corner_01/Road_Corner_01_preview.png" alt="Road_Corner_01 preview" width="180"> | Road_Corner_01 | 20.00 × 20.00 × 0.37 | 300 | 90° turn | [Blend](Road_Corner_01/Road_Corner_01.blend) · [FBX](Road_Corner_01/Road_Corner_01.fbx) · [PNG](Road_Corner_01/Road_Corner_01_preview.png) |
+
+### Street props
+
+| Preview | Asset | Dimensions (m) | Triangles | Description | Files |
+|---|---|---|---:|---|---|
+| <img src="Streetlight_01/Streetlight_01_preview.png" alt="Streetlight_01 preview" width="180"> | Streetlight_01 | 2.29 × 0.40 × 7.40 | 120 | Tapered pole with an arm reaching 1.75 m along +X; place on a sidewalk with the arm over the road | [Blend](Streetlight_01/Streetlight_01.blend) · [FBX](Streetlight_01/Streetlight_01.fbx) · [PNG](Streetlight_01/Streetlight_01_preview.png) |
+| <img src="Tree_01/Tree_01_preview.png" alt="Tree_01 preview" width="180"> | Tree_01 | 3.56 × 2.78 × 5.04 | 88 | Round deciduous tree | [Blend](Tree_01/Tree_01.blend) · [FBX](Tree_01/Tree_01.fbx) · [PNG](Tree_01/Tree_01_preview.png) |
+| <img src="Tree_02/Tree_02_preview.png" alt="Tree_02 preview" width="180"> | Tree_02 | 2.85 × 3.00 × 5.50 | 82 | Three-tier pine tree | [Blend](Tree_02/Tree_02.blend) · [FBX](Tree_02/Tree_02.fbx) · [PNG](Tree_02/Tree_02_preview.png) |
+| <img src="Bench_01/Bench_01_preview.png" alt="Bench_01 preview" width="180"> | Bench_01 | 1.80 × 0.55 × 0.94 | 132 | Slatted park bench | [Blend](Bench_01/Bench_01.blend) · [FBX](Bench_01/Bench_01.fbx) · [PNG](Bench_01/Bench_01_preview.png) |
+| <img src="Car_01/Car_01_preview.png" alt="Car_01 preview" width="180"> | Car_01 | 1.98 × 4.38 × 1.57 | 340 | Blue sedan, static (wheels are not separate objects) | [Blend](Car_01/Car_01.blend) · [FBX](Car_01/Car_01.fbx) · [PNG](Car_01/Car_01_preview.png) |
+| <img src="Car_02/Car_02_preview.png" alt="Car_02 preview" width="180"> | Car_02 | 1.98 × 4.38 × 1.57 | 340 | White variant of Car_01 | [Blend](Car_02/Car_02.blend) · [FBX](Car_02/Car_02.fbx) · [PNG](Car_02/Car_02_preview.png) |
+
+### Environment kit conventions
+
+- **Origin:** buildings and props sit on the ground with the origin at their base centre; road tiles use the tile centre.
+- **Facing:** entrances, car fronts, and headlights face Blender −Y. FBXs use the same **+Z forward / +Y up** export setting as the scenario assets; confirm the facing after import.
+- **Hierarchy:** each asset is an empty root named after the asset, with one child mesh per material (for example `Building_Tall_02_Windows`). This keeps draw calls low and makes materials easy to swap in Unity.
+- **Materials:** `SHIELD_LightGray` (walls, sidewalks), `SHIELD_DarkGray` (trim, curbs, wheels), `SHIELD_Glass` (windows), `SHIELD_Blue` (accents), `SHIELD_Asphalt`, `SHIELD_White` (road markings), `SHIELD_Foliage`, and `SHIELD_Bark`. The last four extend the gray-and-blue palette for the city.
+- **Previews:** rendered with a temporary ground plane, sun, and sky that are not part of the exported model.
 
 ## File conventions
 
