@@ -11,7 +11,10 @@ The visual style uses simple gray materials with blue accents; threat models add
 | [Buildings and ground](#buildings-and-ground) | 13 | 16,624 |
 | [Road and park tiles](#road-and-park-tiles) | 5 | 3,480 |
 | [Street props](#street-props) | 6 | 1,102 |
-| **Total** | **39** | **33,532** |
+| [Terrain](#terrain) | 1 | 4,800 |
+| **Total** | **40** | **38,332** |
+
+An assembled, rendered city made from these assets is described under [City scene](#city-scene).
 
 > **Blender version:** the four original assets were saved with Blender 5.0, which older Blender versions cannot open. Everything else was saved with Blender 3.0.1 and opens in 3.0 or newer. The FBX files work regardless.
 
@@ -156,15 +159,52 @@ Every tile is **20 × 20 m** with its origin at the tile centre and the road sur
 | <img src="Car_01/Car_01_preview.png" alt="Car_01 preview" width="180"> | Car_01 | 1.98 × 4.38 × 1.57 | 340 | Blue sedan, static (wheels are not separate objects) | [Blend](Car_01/Car_01.blend) · [FBX](Car_01/Car_01.fbx) · [PNG](Car_01/Car_01_preview.png) · [Specs](Car_01/Car_01_specs.json) |
 | <img src="Car_02/Car_02_preview.png" alt="Car_02 preview" width="180"> | Car_02 | 1.98 × 4.38 × 1.57 | 340 | White variant of Car_01 | [Blend](Car_02/Car_02.blend) · [FBX](Car_02/Car_02.fbx) · [PNG](Car_02/Car_02_preview.png) · [Specs](Car_02/Car_02_specs.json) |
 
+### Terrain
+
+| Preview | Asset | Dimensions (m) | Triangles | Description | Files |
+|---|---|---|---:|---|---|
+| <img src="Mountain_01/Mountain_01_preview.png" alt="Mountain_01 preview" width="180"> | Mountain_01 | 520.00 × 340.00 × 148.03 | 4,800 | Faceted low-poly mountain group with five peaks, grass foothills, rock slopes, and snow caps. Its edges fall to ground level, so rotated and scaled copies can be overlapped into a range | [Blend](Mountain_01/Mountain_01.blend) · [FBX](Mountain_01/Mountain_01.fbx) · [PNG](Mountain_01/Mountain_01_preview.png) · [Specs](Mountain_01/Mountain_01_specs.json) |
+
 ### Environment kit conventions
 
 - **Origin:** buildings and props sit on the ground with the origin at their base centre; road tiles use the tile centre.
 - **Facing:** entrances, car fronts, and headlights face Blender −Y. FBXs use the same **+Z forward / +Y up** export setting as the scenario assets; confirm the facing after import.
 - **Hierarchy:** each asset is an empty root named after the asset, with one child mesh per material (for example `Building_Tall_02_Windows`). This keeps draw calls low and makes materials easy to swap in Unity.
-- **Materials:** `SHIELD_LightGray` (walls, sidewalks), `SHIELD_DarkGray` (trim, curbs, wheels), `SHIELD_Glass` (windows), `SHIELD_Blue` (accents), `SHIELD_Asphalt`, `SHIELD_White` (road markings), `SHIELD_Foliage`, `SHIELD_Bark`, `SHIELD_Grass`, `SHIELD_Scorched` (damage), and `SHIELD_ThreatRed` (threat models only).
+- **Materials:** `SHIELD_LightGray` (walls, sidewalks), `SHIELD_DarkGray` (trim, curbs, wheels), `SHIELD_Glass` (windows), `SHIELD_Blue` (accents), `SHIELD_Asphalt`, `SHIELD_White` (road markings), `SHIELD_Foliage`, `SHIELD_Bark`, `SHIELD_Grass`, `SHIELD_Rock` and `SHIELD_Snow` (terrain), `SHIELD_Scorched` (damage), and `SHIELD_ThreatRed` (threat models only).
 - **Moving parts:** launchers and the two new radars place each moving part under its own pivot object (`<Asset>_Pod`, `_Rack`, `_Canister`, `_Head`, `_Array`). These five FBXs keep the axis conversion on the root instead of baking it into the meshes, so their root may import with a rotation in Unity. Enable **Bake Axis Conversion** in the model import settings, or leave the root rotation as imported.
 - **Specs JSON:** every new asset has `<AssetName>_specs.json` with relative file names, dimensions, triangle counts, parts, and pivots.
 - **Previews:** rendered with a temporary ground plane, sun, and sky that are not part of the exported model.
+
+## City scene
+
+[`City_Scene_01/`](City_Scene_01/) holds a defended city assembled in Blender from 293 instances of the assets above, with renders from three cameras.
+
+<img src="City_Scene_01/City_Scene_01_aerial.png" alt="City_Scene_01 aerial render" width="720">
+
+| File | Contents |
+|---|---|
+| [City_Scene_01.blend](City_Scene_01/City_Scene_01.blend) | The scene, with cameras `Cam_Aerial`, `Cam_Street`, and `Cam_Map` (orthographic, top-down) |
+| [City_Scene_01_aerial.png](City_Scene_01/City_Scene_01_aerial.png) | Wide aerial view toward the mountains |
+| [City_Scene_01_street.png](City_Scene_01/City_Scene_01_street.png) | Street-level view up the main north–south avenue |
+| [City_Scene_01_map.png](City_Scene_01/City_Scene_01_map.png) | Top-down map of the layout |
+
+**Layout**
+- **Grid:** 9 × 9 tiles on the 20 m grid (about 180 m across). Avenues run every third tile, and the two central avenues extend out of the city.
+- **Downtown:** the central paved blocks hold the towers and large blocks.
+- **Outer ring:** grass lots with smaller buildings and trees.
+- **Park:** four Park_Tile_01 tiles together form a 40 m park in the north-west block.
+- **Damage:** the three `_Damaged` buildings sit among intact ones.
+- **Defense sites:** a short-range battery (Launcher_ShortRange_01 + Radar_Panel_01) sits inside the city at the south-west corner. Three sites sit outside it:
+  - **East:** Command_Center_01, Radar_01, and two mid-range launchers.
+  - **West:** Radar_Array_01 and two mid-range launchers.
+  - **North-east:** Radar_Array_01 and three long-range launchers.
+- **Mountains:** seven Mountain_01 copies form a range about 700–1,100 m north of the city.
+
+**Notes**
+- Each asset is stored once in a hidden `ASSET_<Name>` collection and placed with collection-instance empties. The file stays small (about 0.4 MB), and an instance can be moved or swapped without editing meshes.
+- Radar_01 is brought in from its FBX, because its Blender 5.0 `.blend` cannot be read by Blender 3.x.
+- Lighting is an EEVEE sun with a flat blue sky and a light world-volume haze. The haze is a Blender render setting and does not transfer to Unity.
+- The scene is a Blender layout reference; it is not exported as a single FBX. For Unity, recreate the layout from the individual asset FBXs, using the map render as a guide.
 
 ## File conventions
 

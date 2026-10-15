@@ -5,7 +5,9 @@
 
 **An educational 3D simulation project combining Unity visualization, Blender assets, and a planned Python analysis backend.**
 
-SHIELD_AI explores an abstract layered defense scenario using fictional or stylized objects. The project is currently in the **asset preparation stage**. The repository contains 39 3D assets in three groups: the original scenario assets, a defense scenario kit, and a city environment kit. It also has their previews, a project roadmap, and a Windows Blender MCP setup guide.
+SHIELD_AI explores an abstract layered defense scenario using fictional or stylized objects. The project is currently in the **asset preparation stage**. The repository contains 40 3D assets in three groups: the original scenario assets, a defense scenario kit, and a city environment kit. It also has an assembled and rendered city scene, the assets' previews, a project roadmap, and a Windows Blender MCP setup guide.
+
+![City_Scene_01 aerial render](3D_assets/City_Scene_01/City_Scene_01_aerial.png)
 
 The models are nonfunctional exterior visuals. The project does not claim to reproduce or validate the performance of real defense systems.
 
@@ -23,6 +25,8 @@ The models are nonfunctional exterior visuals. The project does not claim to rep
 | City buildings (3 detailed, 3 damaged, 3 blockouts, 3 background) and ground tile | Created; Unity check pending |
 | Road and park tiles (straight, crossroads, T-junction, corner, park) | Created; Unity check pending |
 | Street props (streetlight, 2 trees, bench, 2 cars) | Created; Unity check pending |
+| Mountain terrain asset | Created; Unity check pending |
+| Assembled city scene with renders (Blender) | Created |
 | Local Blender MCP connection | Configured and tested in the author's local host |
 | Unity integration | Planned |
 | Python simulation and analysis | Planned |
@@ -60,7 +64,12 @@ Asset creation reports describe successful FBX re-import checks for the four ori
 | Buildings and ground | Three `_02` buildings, their `_Damaged` variants, three `_01` blockouts, three background buildings, Ground_Tile_01 | 16,624 |
 | Road and park tiles | Road_Straight_01, Road_Cross_01, Road_T_01, Road_Corner_01, Park_Tile_01 (20 m grid) | 3,480 |
 | Street props | Streetlight_01, Tree_01, Tree_02, Bench_01, Car_01, Car_02 | 1,102 |
-| **Total** | **24 assets** | **21,206** |
+| Terrain | Mountain_01 | 4,800 |
+| **Total** | **25 assets** | **26,006** |
+
+### City scene
+
+`3D_assets/City_Scene_01/` contains a Blender scene that assembles 293 instances of these assets. The city is a 9 × 9-tile grid with a downtown core, a park, and damaged buildings. Defense sites sit inside and outside the city, with a mountain range to the north. Renders are included from aerial, street-level, and top-down map cameras. The scene is a layout reference for rebuilding the city in Unity, not a single export.
 
 See the [illustrated asset catalog](3D_assets/README.md) for previews, model downloads, dimensions, specifications, and import notes.
 
@@ -111,7 +120,7 @@ This diagram is a proposed separation of responsibilities, not a description of 
 ## Next milestones
 
 - Import and check all asset kits in Unity, including the launcher and radar pivots.
-- Create reusable prefabs and assemble a test city block from the road tiles, buildings, and props.
+- Create reusable prefabs and rebuild the City_Scene_01 layout in Unity from them.
 - Demonstrate Python-to-Unity communication with a moving cube.
 - Add logging, pause/restart controls, and reproducible replay.
 
